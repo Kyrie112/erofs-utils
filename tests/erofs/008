@@ -48,11 +48,11 @@ for d in $dirs; do
 	cp -nR $d $localdir
 done
 unset IFS
-
+_notrun "008 is running"
 MKFS_OPTIONS="${MKFS_OPTIONS} -zlz4"
 _scratch_mkfs $localdir >> $seqres.full 2>&1 || _fail "failed to mkfs"
 _scratch_mount 2>>$seqres.full
-_notrun "lz4 compression is disabled, skipped."
+_notrun "008 scratch ok."
 FSSUM_OPTS="-MAC"
 [ $FSTYP = "erofsfuse" ] && FSSUM_OPTS="${FSSUM_OPTS}T"
 
