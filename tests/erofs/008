@@ -8,7 +8,6 @@ seqres=$RESULT_DIR/$(echo $0 | awk '{print $((NF-1))"/"$NF}' FS="/")
 
 # get standard environment, filters and checks
 . "${srcdir}/common/rc"
-_notrun "008 is running."
 
 cleanup()
 {
@@ -49,7 +48,7 @@ for d in $dirs; do
 	cp -nR $d $localdir
 done
 unset IFS
-
+_notrun "008 is running."
 MKFS_OPTIONS="${MKFS_OPTIONS} -zlz4"
 _scratch_mkfs $localdir >> $seqres.full 2>&1 || _fail "failed to mkfs"
 _scratch_mount 2>>$seqres.full
