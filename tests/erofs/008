@@ -17,7 +17,7 @@ cleanup()
 
 _require_erofs
 _require_fssum
-_notrun "008 is running."
+
 # remove previous $seqres.full before test
 rm -f $seqres.full
 
@@ -35,7 +35,7 @@ fi
 localdir="$tmp/$seq"
 rm -rf $localdir
 mkdir -p $localdir
-
+_notrun "008 is running."
 # collect files pending for verification
 dirs=`find ../ -maxdepth 1 -type d -printf '%p:'`
 IFS=':'
