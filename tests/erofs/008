@@ -6,6 +6,7 @@
 seq=`basename $0`
 seqres=$RESULT_DIR/$(echo $0 | awk '{print $((NF-1))"/"$NF}' FS="/")
 
+_notrun "008 is running."
 # get standard environment, filters and checks
 . "${srcdir}/common/rc"
 
