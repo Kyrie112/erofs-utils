@@ -37,7 +37,7 @@ fi
 localdir="$tmp/$seq"
 rm -rf $localdir
 mkdir -p $localdir
-
+_notrun "008 is running"
 # collect files pending for verification
 dirs=`find ../ -maxdepth 1 -type d -printf '%p:'`
 IFS=':'
@@ -48,7 +48,7 @@ for d in $dirs; do
 	cp -nR $d $localdir
 done
 unset IFS
-_notrun "008 is running"
+_notrun "008 collect ok".
 MKFS_OPTIONS="${MKFS_OPTIONS} -zlz4"
 _scratch_mkfs $localdir >> $seqres.full 2>&1 || _fail "failed to mkfs"
 _scratch_mount 2>>$seqres.full
