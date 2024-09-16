@@ -1,7 +1,7 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-2.0+
 #
-# verify the uncompressed image
+# verify lz4 compressed image
 #
 seq=`basename $0`
 seqres=$RESULT_DIR/$(echo $0 | awk '{print $((NF-1))"/"$NF}' FS="/")
@@ -23,6 +23,11 @@ rm -f $seqres.full
 
 # real QA test starts here
 echo "QA output created by $seq"
+
+[ -z "$lz4_on" ] && \
+	_notrun "lz4 compression is disabled, skipped."
+
+# _require_erofs_compression "-zlz4"
 
 if [ -z $SCRATCH_DEV ]; then
 	SCRATCH_DEV=$tmp/erofs_$seq.img
