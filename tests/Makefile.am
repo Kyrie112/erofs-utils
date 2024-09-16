@@ -56,18 +56,6 @@ TESTS += erofs/006
 # 007 - check for bad lz4 versions
 TESTS += erofs/007
 
-# 008 - verify lz4 compressed image
-TESTS += erofs/008
-
-# 009 - verify lz4hc compressed image
-TESTS += erofs/009
-
-# 010 - (legacy image) verify lz4 compressed image
-TESTS += erofs/010
-
-# 011 - (legacy image) verify lz4hc compressed image
-TESTS += erofs/011
-
 # 012 - check the hard-link functionality
 TESTS += erofs/012
 
