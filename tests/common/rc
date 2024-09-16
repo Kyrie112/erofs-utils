@@ -151,9 +151,9 @@ _require_fscache()
 _require_erofs_compression()
 {
 	local opt="$*"
-	local random_dir="$tmp/$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)"
+	
 
-	echo "$random_dir"
+	echo "$opt"
 }
 
 # Do the actual mkfs work.
