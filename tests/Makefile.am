@@ -57,7 +57,7 @@ TESTS += erofs/006
 TESTS += erofs/007
 
 # 008 - verify lz4 compressed image
-# TESTS += erofs/008
+TESTS += erofs/008
 
 # 009 - verify lz4hc compressed image
 # TESTS += erofs/009
