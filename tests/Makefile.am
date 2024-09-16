@@ -60,13 +60,13 @@ TESTS += erofs/007
 TESTS += erofs/008
 
 # 009 - verify lz4hc compressed image
-# TESTS += erofs/009
+TESTS += erofs/009
 
 # 010 - (legacy image) verify lz4 compressed image
-# TESTS += erofs/010
+TESTS += erofs/010
 
 # 011 - (legacy image) verify lz4hc compressed image
-# TESTS += erofs/011
+TESTS += erofs/011
 
 # 012 - check the hard-link functionality
 TESTS += erofs/012
@@ -84,10 +84,10 @@ TESTS += erofs/015
 TESTS += erofs/016
 
 # 017 - check the compress-hints functionality
-# TESTS += erofs/017
+TESTS += erofs/017
 
 # 018 - verify microlzma compressed image
-# TESTS += erofs/018
+TESTS += erofs/018
 
 # 019 - check extended attribute functionality
 TESTS += erofs/019
@@ -105,7 +105,7 @@ TESTS += erofs/022
 TESTS += erofs/023
 
 # 024 - verify deflate compressed image
-# TESTS += erofs/024
+TESTS += erofs/024
 
 # 025 - regression test for corrupted directories with hardlinks
 TESTS += erofs/025
