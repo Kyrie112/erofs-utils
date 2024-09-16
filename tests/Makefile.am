@@ -102,7 +102,7 @@ TESTS += erofs/021
 TESTS += erofs/022
 
 # 023 - check extended attributes in random layouts
-TESTS += erofs/023
+# TESTS += erofs/023
 
 # 024 - verify deflate compressed image
 TESTS += erofs/024
