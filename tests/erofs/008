@@ -18,7 +18,7 @@ cleanup()
 _require_erofs
 _require_fssum
 
-# remove previous $seqres.full before test
+remove previous $seqres.full before test
 rm -f $seqres.full
 
 # real QA test starts here
