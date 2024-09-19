@@ -151,7 +151,7 @@ _require_fscache()
 _require_erofs_compression()
 {
 	local opt="$*"
-	local random_dir="$tmp/$RANDOM"
+	local random_dir="$tmp/$(date +%Y%m%d)_$RANDOM"
 
 	mkdir -p $random_dir/test $random_dir/mnt > /dev/null 2>&1
 	truncate -s 1m $random_dir/test/file > /dev/null 2>&1
